@@ -1,0 +1,25 @@
+<ul>
+    <li>F : Forward</li>
+    <li>L : Left</li>
+    <li>R : Right</li>
+    <li>Variable Name</li>
+</ul>
+<ng-container *ngFor="let rule of formModel.rules">
+    <div>
+        {{ rule.name }} : 
+        <input 
+            type="text" 
+            name="{{ rule.name }}" 
+            [(ngModel)]="rule.pattern"
+            (ngModelChange)="onRuleChange($event)"
+        >
+        <button
+            (click)="onMinusStep()"
+        >-</button>
+        {{ _step }}
+        <button
+            (click)="onPlusStep()"
+        >+</button>
+        
+    </div>
+</ng-container>

@@ -1,0 +1,8 @@
+<app-l-system-canvas
+    [patternRules]="rules"
+    [step]="step"
+></app-l-system-canvas>
+<app-l-system-form 
+    (lSystemForm)="onFormUpdate($event)"
+    (step)="onStepChange($event)"
+></app-l-system-form>
