@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "angular-l-system"
+  "defaultProject": "angular-l-system",
+  "cli": {
+    "analytics": false
+  }
 }
